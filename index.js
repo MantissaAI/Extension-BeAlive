@@ -222,7 +222,7 @@ jQuery(async () => {
   });
   eventSource.on(event_types.MESSAGE_SENT, () => {
     if (enabled) {
-      onRevision();
+      // onRevision();
     };
   });
   // $("#longterm").on("input", onButtonClick)
