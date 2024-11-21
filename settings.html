@@ -1,0 +1,41 @@
+<!-- You might want to add additional HTML elements to ST. 
+    It's good practice to separate it out from your code -->
+<div class="extension-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Be Alive</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <!-- <div class="extension_block flex-container">
+                <input id="my_button" class="menu_button" type="submit" value="Example Button" />
+            </div> -->
+
+            <!-- <div class="extension_block flex-container">
+                <input id="enabled" type="checkbox" />
+                <label for="enabled">Enabled</label>
+            </div> -->
+            <div id="alive">🟡 No chat</div>
+            <div class="extension_block flex-container">
+                <label for="longterm">The number of messages in long-term memory.</label>
+                <input id="longterm" class="text_pole" type="number"/>
+                <label for="shortterm">The number of messages in short-term memory.</label>
+                <input id="shortterm" class="text_pole" type="number"/>
+                <label for="size">Batch size for revision.</label>
+                <input id="size" class="text_pole" type="number"/>
+                <label for="overlap">Batch for revision overlapping.</label>
+                <input id="overlap" class="text_pole" type="number"/>
+                <label for="wait">Waiting time between requests (ms)</label>
+                <input id="wait" class="text_pole" type="number"/>
+                <label for="method">A way of forgetting messages</label>
+                <select id="method">
+                    <option value="hide">Hide forgotten messages</option>
+                    <option value="delete">Delete forgotten messages</option>
+                </select>
+                <button id="revision" class="menu_button"> Revise </button>
+            </div>
+
+            <hr class="sysHR" />
+        </div>
+    </div>
+</div>
