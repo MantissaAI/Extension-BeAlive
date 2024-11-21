@@ -187,12 +187,12 @@ function resetState(){
   if (SillyTavern.getContext().chatId.includes("bealive")) {
     enabled = true;
     // toastr.success("Bealive system online!")
-    $("#alive").text("🟢 Enabled!")
+    $("#alive").text("🟢 Enabled")
     showScore();
   }
   else {
     enabled = false;
-    $("#alive").text("🔴 Disabled.")
+    $("#alive").text("🔴 Disabled")
   }
 }
 
