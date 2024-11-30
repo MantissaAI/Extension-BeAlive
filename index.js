@@ -136,7 +136,7 @@ async function onRevision(show = false){
         let itemToRemove = longchat[i];
         
         // Находим индекс элемента в chat0 по id
-        let indexInChat0 = chat0.findIndex(c => c === itemToRemove);
+        let indexInChat0 = cont.chat.findIndex(c => c === itemToRemove);
         
         // Если элемент найден, вызываем функцию Obliviate
         if (indexInChat0 !== -1) {
