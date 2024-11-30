@@ -58,11 +58,11 @@ function onInput(event) {
   saveSettingsDebounced();
 }
 
-function obliviate(i){
+async function obliviate(i){
   let cont = SillyTavern.getContext()
   console.log(`BEALIVE: Obliviate ${i} : ${cont.chat[i].mes}!`)
-  if (extension_settings[extensionName].method == 'delete') cont.executeSlashCommands(`/cut ${i}`);
-  else cont.executeSlashCommands(`/hide ${i}`);
+  if (extension_settings[extensionName].method == 'delete') await cont.executeSlashCommands(`/cut ${i}`);
+  else await cont.executeSlashCommands(`/hide ${i}`);
 }
 
 
@@ -140,7 +140,7 @@ async function onRevision(show = false){
         
         // Если элемент найден, вызываем функцию Obliviate
         if (indexInChat0 !== -1) {
-            obliviate(indexInChat0);
+            await obliviate(indexInChat0);
         }
     }
   }
