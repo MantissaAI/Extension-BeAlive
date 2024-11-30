@@ -60,7 +60,7 @@ function onInput(event) {
 
 function obliviate(i){
   let cont = SillyTavern.getContext()
-  console.log(`BEALIVE: Obliviate ${i}!`)
+  console.log(`BEALIVE: Obliviate ${i} : ${cont.chat[i].mes}!`)
   if (extension_settings[extensionName].method == 'delete') cont.executeSlashCommands(`/cut ${i}`);
   else cont.executeSlashCommands(`/hide ${i}`);
 }
@@ -78,7 +78,6 @@ function rev(chat){
 ${joinmes}
 ]
 Raising Criteria:
-+ Strong emotions
 + Important information
 + Events that are dear to the author or someone else.
 Decreasing criteria:
